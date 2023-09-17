@@ -1,0 +1,91 @@
+Deep Thought Testing Documentation
+
+1. Introduction
+
+This document provides an overview of the testing process for the login feature of [Your Application Name]. The objective is to verify the functionality of the login process through a series of test cases.
+
+2. Test Plan
+
+Objective: The primary objective is to ensure the login feature functions correctly.
+Testing Types: We will perform functional, usability, security, and error-handling testing.
+Testing Strategy: Tests will be conducted manually in various environments.
+Test Environment: Testing will be conducted on Windows and macOS using Chrome and Firefox browsers.
+3. Test Cases
+
+Test Case 1: Valid Login
+
+Test Case Description: Verify that a valid user can successfully log in.
+Test Steps:
+Enter valid username - Madhavv.
+Enter valid password - MAdhavv@1.
+Click the "Login" button.
+Expected Results: User is logged in successfully.
+
+
+Test Case 2: Invalid Login
+
+Test Case Description: Verify that invalid credentials result in login failure.
+Test Steps:
+Enter an invalid username - User.
+Enter an invalid password - password.
+Click the "Login" button.
+Expected Results: User login fails, and an error message is displayed.
+
+
+Test Case 3: Error Message Content
+
+Test Case Description: Verify that the error message for an invalid login contains specific text.
+Test Steps:
+Enter invalid username - test.
+Enter invalid password - test.
+Click the "Login" button.
+Expected Results: The error message should contain the text "Invalid credentials."
+
+
+Test Case 4: Successful Login Redirect
+
+Test Case Description: Verify that a successful login redirects the user to the dashboard.
+Test Steps:
+Enter valid username - Madhavv.
+Enter valid password - Madhavv@1.
+Click the "Login" button.
+Expected Results: User is redirected to the dashboard.
+
+
+4. Test Execution
+
+Test Execution Schedule: Tests were executed on [Execution Date].
+Test Data: Test data included valid and invalid usernames and passwords.
+Execution Process: Tests were manually executed on the specified environments.
+
+
+5. Test Results
+
+Test Execution Logs: All test cases passed successfully.
+Defect Reports: No defects were identified during testing.
+Challenges Faced and Solutions
+
+Challenge 1: In Test Case 3, the error message text was dynamic, and it was challenging to assert the exact text.
+Solution: Instead of using .eql, we used .contains to check for the presence of "Invalid credentials" within the error message.
+
+
+6. Test Summary
+
+Overall Test Results: All test cases passed successfully.
+Test Coverage: Test coverage included functional, usability, security, and error-handling scenarios.
+Sign-off: Testing phase is approved.
+
+
+7. Recommendations
+
+No critical defects were identified.
+
+
+8. Conclusion
+
+Lessons Learned: The testing process was successful, and we learned that thorough testing and clear error messages are essential for a positive user experience.
+
+
+9. Revision History
+
+Version 1.0 (18/09/2023): Initial release of testing documentation.
